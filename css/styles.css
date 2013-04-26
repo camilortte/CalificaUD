@@ -37,12 +37,6 @@
 	margin-bottom: 10px;
 }
 
-.form-signin input[type="email"]{
-	font-size: 1em;
-	height: auto;
-	margin-bottom: 1em;
-	padding: 0.8em 9px;
-}
 
 .space{
 	height: 10em;
@@ -52,8 +46,9 @@
 	display: block;
 }
 
-#register{
+#register,#error_registro{
 	display: none;
 }
+
 
 	

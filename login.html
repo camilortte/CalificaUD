@@ -39,18 +39,18 @@
 
 		<div class="container-fluid" id="log">
 
-			<form class="form-signin">
+			<form class="form-signin" action="" id='form_login'>
 				<h2 class="form-signin-heading text-center">LOGIN</h2>
 
-				<input type="email" class="input-block-level" placeholder="Ingrese su correo Institucional" required=true>
-				<input type="password" class="input-block-level" placeholder="Password" required=true>
+				<input type="email" class="input-block-level" placeholder="Ingrese su correo Institucional" required=true id="email_login">
+				<input type="password" class="input-block-level" placeholder="Password" required=true id='password_login'>
 				<label class="checkbox">
 					<input type="checkbox" value="remember-me"> Recuerdame
 				</label>
 				<div class="row-fluid">
 					<div class="span12">
-						<button class="btn btn-large btn-primary span6" type="submit" id="iniciar">Iniciar sesion</button>
-						<button class="btn btn-large btn-info span6" type="submit" href="#toregister" id="registrar">Registrarme</button>
+						<button class="btn btn-large btn-primary span6" type="submit" id="iniciarSesion_login">Iniciar sesion</button>
+						<button class="btn btn-large btn-info span6" type="submit"  id="registrar">Registrarme</button>
 					</div>
 				</div>
 			</form>
@@ -59,8 +59,8 @@
 
 
 		
-		<div class="container-fluid" id="register">
-			<form class="form-signin">
+		<div class="container-fluid " id="register">
+			<form class="form-signin" id="form-register" action="#">
 				<h2 class="form-signin-heading text-center">Registro</h2>
 				<div class="input-prepend">
 					<span class="add-on ">Apellido&nbsp;&nbsp;&nbsp;</span>
@@ -68,18 +68,18 @@
 					<span class="add-on ">Nombre&nbsp;&nbsp;&nbsp;</span>
 					<input type="text" class="input-xlarge" placeholder="Nombre" required=true><br><br>
 					<span class="add-on ">@&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-					<input type="text" class="input-xlarge" placeholder="Direccion de correo" required=true><br><br>
+					<input type="email" class="input-xlarge" placeholder="Direccion de correo" required=true id="correo"><br><br>
 					<span class="add-on ">@&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-					<input type="text" class="input-xlarge" placeholder="Repita direccion de correo" required=true><br><br>
+					<input type="email" class="input-xlarge" placeholder="Repita direccion de correo" required=true id="correo2"><br><br>
 					<span class="add-on ">FechaNac</span>
 					<input type="date" class="input-xlarge" placeholder="Ingrese fecha Nacimiento" required=true><br><br>
 					<span class="add-on ">Facultad&nbsp;&nbsp;</span>
 					<select class="input-xlarge" required=true>
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5</option>
+						<option>A</option>
+						<option>C</option>
+						<option>A</option>
+						<option>E</option>
+						<option>S</option>
 					</select><br><br>
 					<span class="add-on ">Carrera&nbsp;&nbsp;&nbsp;&nbsp;</span>
 					<select class="input-xlarge" required=true>
@@ -98,15 +98,13 @@
 						<option>5</option>
 					</select><br><br>
 					<span class="add-on ">Pass&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-					<input type="password" class="input-xlarge" placeholder="Password" required=true><br><br>
+					<input type="password" class="input-xlarge" placeholder="Password" required=true id='password1'><br><br>
 					<span class="add-on ">Pass&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-					<input type="password" class="input-xlarge" placeholder="Repita Password" required=true><br><br>
+					<input type="password" class="input-xlarge" placeholder="Repita Password" required=true id='password2'><br><br>
 				</div>
 
+				<div class="alert alert-error" id="error_registro">Error de registro</div>
 
-				<label class="checkbox">
-					<input type="checkbox" value="remember-me"> Recuerdame
-				</label>
 				<div class="row-fluid">
 					<div class="span12">
 						<button class="btn btn-large btn-info span6" type="submit" id="volverToIniciarSesion">Volver</button>
@@ -140,6 +138,7 @@
 	<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-carousel.js"></script>
 	<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-typeahead.js"></script>
 	<script src="js/aplicacion.js"></script>
+	<script src="js/jquery.md5.js"></script>
 
 </body>
 </html>
