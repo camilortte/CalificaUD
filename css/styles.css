@@ -21,7 +21,7 @@
 }
 
 .form-signin {
-        max-width: 25em;
+        max-width: 28em;
         padding: 1.5em 1.5em 1.5em;
         margin: 0 auto 2em;
         background-color: #fff;
@@ -37,7 +37,7 @@
 	margin-bottom: 10px;
 }
 
-.form-signin input[type="email"],.form-signin input[type="password"] {
+.form-signin input[type="email"]{
 	font-size: 1em;
 	height: auto;
 	margin-bottom: 1em;
@@ -48,5 +48,12 @@
 	height: 10em;
 }
 
+.space_form{
+	display: block;
+}
+
+#register{
+	display: none;
+}
 
 	

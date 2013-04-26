@@ -38,6 +38,7 @@
 		</div>
 
 		<div class="container-fluid" id="log">
+
 			<form class="form-signin">
 				<h2 class="form-signin-heading text-center">LOGIN</h2>
 
@@ -59,55 +60,88 @@
 
 		
 		<div class="container-fluid" id="register">
-					<form class="form-signin">
-						<h2 class="form-signin-heading text-center">Registro</h2>
-						<label class="text">
-							<input type="email" class="input-block-level" placeholder="Ingrese su correo Institucional" required=true>
-						</label>
-						<input type="password" class="input-block-level" placeholder="Password" required=true>
-						<label class="checkbox">
-							<input type="checkbox" value="remember-me"> Recuerdame
-						</label>
-						<div class="row-fluid">
-							<div class="span12">
-								<button class="btn btn-large btn-info span12" type="submit" id="volverToIniciarSesion">Volver</button>
-							</div>
-						</div>
-					</form>
-
-					<div class="form-signin">
-						<div class="row-fluid">
-							<div class="span12">
-								<button class="btn btn-large btn-primary span12" type="submit" href="#toregister" ><a id="	registarse">Registarse</a></button>
-							</div>
-						</div>
-					</div>
+			<form class="form-signin">
+				<h2 class="form-signin-heading text-center">Registro</h2>
+				<div class="input-prepend">
+					<span class="add-on ">Apellido&nbsp;&nbsp;&nbsp;</span>
+					<input type="text" class="input-xlarge" placeholder="Apellido" required=true><br><br>
+					<span class="add-on ">Nombre&nbsp;&nbsp;&nbsp;</span>
+					<input type="text" class="input-xlarge" placeholder="Nombre" required=true><br><br>
+					<span class="add-on ">@&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+					<input type="text" class="input-xlarge" placeholder="Direccion de correo" required=true><br><br>
+					<span class="add-on ">@&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+					<input type="text" class="input-xlarge" placeholder="Repita direccion de correo" required=true><br><br>
+					<span class="add-on ">FechaNac</span>
+					<input type="date" class="input-xlarge" placeholder="Ingrese fecha Nacimiento" required=true><br><br>
+					<span class="add-on ">Facultad&nbsp;&nbsp;</span>
+					<select class="input-xlarge" required=true>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select><br><br>
+					<span class="add-on ">Carrera&nbsp;&nbsp;&nbsp;&nbsp;</span>
+					<select class="input-xlarge" required=true>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select><br><br>
+					<span class="add-on ">Localidad&nbsp;</span>
+					<select class="input-xlarge" required=true>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select><br><br>
+					<span class="add-on ">Pass&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+					<input type="password" class="input-xlarge" placeholder="Password" required=true><br><br>
+					<span class="add-on ">Pass&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+					<input type="password" class="input-xlarge" placeholder="Repita Password" required=true><br><br>
 				</div>
 
-			<div class="space"></div>
 
- 			<footer>
-				<div id="foote" class="container text-center"
-				<p>&copy; Creado por Camilo Antonio Ramírez Morales <a href="https://twitter.com/camilortte">@Camilortte</a> on Twitter</p>
-				<p>Gracias a <a href="http://twitter.github.io/bootstrap/">Boostrap</a></p>
-			</div>
-		</footer>
+				<label class="checkbox">
+					<input type="checkbox" value="remember-me"> Recuerdame
+				</label>
+				<div class="row-fluid">
+					<div class="span12">
+						<button class="btn btn-large btn-info span6" type="submit" id="volverToIniciarSesion">Volver</button>
+						<button class="btn btn-large btn-info span6" type="submit" id="botonRegistrarse">Registrarse</button>							
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<div class="space"></div>
+
+		<footer>
+			<div id="foote" class="container text-center"
+			<p>&copy; Creado por Camilo Antonio Ramírez Morales <a href="https://twitter.com/camilortte">@Camilortte</a> on Twitter</p>
+			<p>Gracias a <a href="http://twitter.github.io/bootstrap/">Boostrap</a></p>
+		</div>
+	</footer>
 
 
-		<script src="http://code.jquery.com/jquery.min.js"></script>
-		<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-transition.js"></script>
-		<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-alert.js"></script>
-		<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-modal.js"></script>
-		<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-dropdown.js"></script>
-		<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-scrollspy.js"></script>
-		<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-tab.js"></script>
-		<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-tooltip.js"></script>
-		<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-popover.js"></script>
-		<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-button.js"></script>
-		<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-collapse.js"></script>
-		<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-carousel.js"></script>
-		<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-typeahead.js"></script>
-		<script src="js/aplicacion.js"></script>
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-transition.js"></script>
+	<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-alert.js"></script>
+	<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-modal.js"></script>
+	<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-dropdown.js"></script>
+	<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-scrollspy.js"></script>
+	<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-tab.js"></script>
+	<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-tooltip.js"></script>
+	<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-popover.js"></script>
+	<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-button.js"></script>
+	<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-collapse.js"></script>
+	<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-carousel.js"></script>
+	<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-typeahead.js"></script>
+	<script src="js/aplicacion.js"></script>
 
-	</body>
-	</html>
+</body>
+</html>
+
+

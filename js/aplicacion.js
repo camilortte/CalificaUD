@@ -1,13 +1,18 @@
-$(function ()  
-  { $("#register").hide();  
-});  
+//$("#registrar").css("display","none"); botonRegistrarse
 
-$("#iniciar").click(function () {
-   $("#log").show("slow");
-   $("#register").hide("slow");
+
+//Aparicion -desaparciion
+$("#registrar").click(function() {	
+	 $("#log").hide("slow");
+	$("#register").show("slow");
 });
 
-$("#registrar").click(function () {
-   $("#register").show("slow");
-   $("#log").hide("slow");
+$("#volverToIniciarSesion").click(function() {	
+	 $("#register").hide("slow");
+	$("#log").show("slow");
+});
+
+$("#botonRegistrarse").click(function() {
+	$("#form1").valid(function(){alert("SE VA A ENVIAR");});	
+	 
 });
