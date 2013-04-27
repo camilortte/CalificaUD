@@ -41,10 +41,10 @@
 
 		<div class="container-fluid" id="log">
 
-			<form class="form-signin" action="WebUserControl1.ascx" id='form_login'>
+			<form class="form-signin" action="redirige.aspx" id='form_login'>
 				<h2 class="form-signin-heading text-center">LOGIN</h2>
 
-				<input type="email" class="input-block-level" placeholder="Ingrese su correo Institucional" required=true id="email_login">
+				<input type="email" class="input-block-level" placeholder="Ingrese su correo Institucional" required=true id="email_login" name="email_login">
 				<input type="password" class="input-block-level" placeholder="Password" required=true id='password_login'>
 				<label class="checkbox">
 					<input type="checkbox" value="remember-me"> Recuerdame

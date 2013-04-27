@@ -1,14 +1,8 @@
-﻿Public Class WebForm2
+﻿Public Class redirige
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
     End Sub
-
-    Public Sub cantar()
-        Response.Write("cantar")
-    End Sub
-
-
 
 End Class

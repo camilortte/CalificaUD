@@ -224,6 +224,7 @@
     <Content Include="estudiante\Estudiante.Master" />
     <Content Include="login.aspx" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="redirige.aspx" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
     <Content Include="Scripts\jquery-ui-1.8.20.js" />
@@ -343,6 +344,13 @@
     </Compile>
     <Compile Include="login.aspx.vb">
       <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="redirige.aspx.designer.vb">
+      <DependentUpon>redirige.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="redirige.aspx.vb">
+      <DependentUpon>redirige.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
