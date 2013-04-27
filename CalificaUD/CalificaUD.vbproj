@@ -223,7 +223,6 @@
     <Content Include="estudiante\WebForm1.aspx" />
     <Content Include="estudiante\Estudiante.Master" />
     <Content Include="login.aspx" />
-    <Content Include="WebUserControl1.ascx" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
@@ -345,13 +344,6 @@
     <Compile Include="login.aspx.vb">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="WebUserControl1.ascx.designer.vb">
-      <DependentUpon>WebUserControl1.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="WebUserControl1.ascx.vb">
-      <DependentUpon>WebUserControl1.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
