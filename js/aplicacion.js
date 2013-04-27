@@ -45,7 +45,6 @@ $('#form-register').submit(function(){
 $('#form_login').submit(function(){
 	var pass=$('#password_login').val();
 	var md5=$.md5(pass);
-	alert(pass+" "+md5);
-	return false;
-	//
+	//alert(pass+" "+md5);
+	return true;	
 })

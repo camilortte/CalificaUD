@@ -1,6 +1,7 @@
 #foote{
 	background-color: #eeeeee;	
 	border-radius: 1em;	
+	padding-top: 60px;
 }
 
 .login{
@@ -50,5 +51,8 @@
 	display: none;
 }
 
+.space_link{
+	margin-bottom: 0.5em;
+}
 
 	
