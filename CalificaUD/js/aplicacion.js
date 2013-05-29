@@ -1,10 +1,12 @@
-//$("#registrar").css("display","none"); botonRegistrarse
+//$("#registrar").css("display","none"); botonRegistrarse PRUEBA
 
 
 //Aparicion -desaparciion
-$("#registrar").click(function() {	
-	 $("#log").hide("slow");
+$("#registrar").click(function(evnent) {	
+	$("#log").hide("slow");
 	$("#register").show("slow");
+	//Para que no SUBMIT el formulario
+	event.stopPropagation();
 });
 
 $("#volverToIniciarSesion").click(function() {	
@@ -13,7 +15,7 @@ $("#volverToIniciarSesion").click(function() {
 });
 
 //Antes de enviar el registro comprobamos que el correo y  los passwords coincidan.
-$('#form-register').submit(function(){
+$('#form_register').submit(function(){	
 	var pass1=$('#password1').val();
 	var pass2=$('#password2').val();
 	var correo=$('#correo').val();
@@ -35,6 +37,9 @@ $('#form-register').submit(function(){
 		$('#error_registro').show("slow");
 		return false
 	}else{
+		var pass=$('#password1').val();
+		var md5=$.md5(pass);
+		$('#password1').val(md5);
 		seguir=true;
 	}
 
@@ -45,6 +50,9 @@ $('#form-register').submit(function(){
 $('#form_login').submit(function(){
 	var pass=$('#password_login').val();
 	var md5=$.md5(pass);
+	$('#password_login').val(md5);
+	var pass2=$('#password_login').val();
 	//alert(pass+" "+md5);
+	//alert(pass2);
 	return true;	
 })

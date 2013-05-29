@@ -206,6 +206,7 @@
     <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="estudiante\estudiante.aspx" />
     <Content Include="Images\accent.png" />
     <Content Include="Images\bullet.png" />
     <Content Include="Images\heroAccent.png" />
@@ -220,11 +221,10 @@
     <Content Include="Images\orderedList8.png" />
     <Content Include="Images\orderedList9.png" />
     <Content Include="packages.config" />
-    <Content Include="estudiante\WebForm1.aspx" />
-    <Content Include="estudiante\Estudiante.Master" />
     <Content Include="login.aspx" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="redirige.aspx" />
+    <Content Include="registra.aspx" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
     <Content Include="Scripts\jquery-ui-1.8.20.js" />
@@ -296,19 +296,22 @@
     <Compile Include="Account\RegisterExternalLogin.aspx.designer.vb">
       <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="conexionDB.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="estudiante\estudiante.aspx.designer.vb">
+      <DependentUpon>estudiante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="estudiante\estudiante.aspx.vb">
+      <DependentUpon>estudiante.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="index.aspx.vb">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.designer.vb">
       <DependentUpon>index.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="estudiante\Estudiante.Master.designer.vb">
-      <DependentUpon>Estudiante.Master</DependentUpon>
-    </Compile>
-    <Compile Include="estudiante\Estudiante.Master.vb">
-      <DependentUpon>Estudiante.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
@@ -332,13 +335,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="estudiante\WebForm1.aspx.designer.vb">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="estudiante\WebForm1.aspx.vb">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
     <Compile Include="login.aspx.designer.vb">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
@@ -351,6 +347,13 @@
     </Compile>
     <Compile Include="redirige.aspx.vb">
       <DependentUpon>redirige.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="registra.aspx.designer.vb">
+      <DependentUpon>registra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="registra.aspx.vb">
+      <DependentUpon>registra.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
