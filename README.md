@@ -4,7 +4,16 @@ CalificaUD
 Plataforma en ASP.NET para calificar profesores de la universidad Distrital facultad tecnológica.
 
 ##Información:
-La aplicacion esta compilada en ASP.NET usando el entorno de desarrollo VisualStudio-2012.
+* La aplicacion esta compilada en ASP.NET usando el entorno de desarrollo VisualStudio-2012.
+* Se agregaron la clase login y la clase registro
+* Ya se puede registrar
+* Ya se puede iniciar sesión
+* Ya hay manejo de sesiones
+
+## Tener cuidado con el pryecto ya que:
+* Se deben modificar la dirección de la bases de datos en conexioBD.vb
+* Se debe modificar la conexión de la base de datos en login.aspx en cada sqlDataSource.
+
 
 
 ##Licencia
