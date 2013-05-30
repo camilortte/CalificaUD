@@ -312,7 +312,7 @@
     </Compile>
     <Compile Include="estudiante\ranking.aspx.vb">
       <DependentUpon>ranking.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="index.aspx.vb">
       <SubType>ASPXCodeBehind</SubType>
