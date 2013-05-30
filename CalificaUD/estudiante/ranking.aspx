@@ -1,9 +1,9 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="estudiante.aspx.vb" Inherits="CalificaUD.estudiante" %>
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="ranking.aspx.vb" Inherits="CalificaUD.ranking" %>
 <%@ outputcache Location="None" %> 
 <%
     If Session("activate") Then
 %>
-    <!doctype html>
+<!doctype html>
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
@@ -30,7 +30,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</a>
-				<a class="brand" href="../index.aspx">Estudiante Califica a los profesores de la UD</a>
+				<a class="brand" href="estudiante.html">Estudiante Califica a los profesores de la UD</a>
 				<div class="nav-collapse">
 					<ul class="nav">
 						<!--<li class="active"><a href="#">Home</a></li>-->						
@@ -57,34 +57,33 @@
         <div class="span3">
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
-              <li><a  class="btn active" href="estudiante.html"><i class="icon-home"></i>Home</a></li>
+             <li><a  class="btn " href="estudiante.html"><i class="icon-home"></i>Home</a></li>
 			  <li class="nav-header"><i class="icon-book"></i> Informate</li>
-              <li><a  class="btn " href="ranking.aspx">Todos los profesores</a></li>
+              <li><a  class="btn active" href="todos_los_profesores.html">Todos los profesores</a></li>
               <li class="nav-header"><i class="icon-globe"></i> Cuantifica</li>
               <li ><a class="btn space_link" href="#">Estadisticas por Facultad <span class="label">¡Muy Pronto!</span></a></li>
               <li><a class="btn space_link" href="estadisticas_carrera.html">Estadisticas por carrera <span class="label label-important">¡Nuevo!</span></a></li>
               <li><a class="btn space_link" href="estadisticas_materia.html">Estadisticas por Materia <span class="label label-important">¡Nuevo!</span></a></li>
               <li class="nav-header"><i class="icon-ok-sign"></i> Califica</li>
               <li><a class="btn  space_link" href="califica_carrera.html">Por carrera <span class="label label-important">¡Nuevo!</span></a></li>
-              <li><a class="btn space_link" href="califica_materia.html">Por materia <span class="label label-important">¡Nuevo!</span></a></li>              
+              <li><a class="btn space_link" href="califica_materia.html">Por materia <span class="label label-important">¡Nuevo!</span></a></li>          
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
+
         <div class="span9">
-          <div class="hero-unit">
-            <h1>Hola Nombre usuario.</h1>
-            <p>Aprocecha y ve las ultimas estadisiticas de calificacion de tus profesores.</p>
-          </div>
-          <div class="row-fluid">          
-            <div class="span6">
-              <h2>Estadisticas</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            </div><!--/span-->
-            <div class="span6">
-              <h2>Calificaciones</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            </div><!--/span-->
-          </div><!--/row-->
+        	<h1>As&iacute; estan las tablas:</h1>
+        	<table class="table table-bordered">
+				<tr><th>Nombre</th><th>Facultad</th><th>Materias</th><th>Carreras</th> </tr> 
+				<tr class="success"><td>Camilo</td><td>Tecnologica</td><td>Integral</td><td>Sistemas</td></tr>
+				<tr class="error"><td>Camilo</td><td>Tecnologica</td><td>Integral</td><td>Sistemas</td></tr>
+				<tr class="warning"><td>Camilo</td><td>Tecnologica</td><td>Integral</td><td>Sistemas</td></tr>
+			</table>
+
+			<p class="alert alert-success">Verde: El profesor supero el puntaje de 3.0</p>
+			<p class="alert alert-block">Amarillo: El profesor no tiene calificacion.</p>
+			<p class="alert alert-error">Rojo: El profesor no supero el puntaje de 3.0.</p>			
+			
         </div><!--/span-->
       </div><!--/row-->
 
@@ -115,15 +114,13 @@
 		
 </body>
 </html>
-
 <% Else
         Response.Redirect("../index.aspx")
         %>
 
-<h1>ACCESO DENEGADO</h1>
+<h1>ACCESO DENEGADO a RANKING</h1>
 
 
 <%
     End If
 %>
-

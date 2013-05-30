@@ -207,6 +207,7 @@
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="estudiante\estudiante.aspx" />
+    <Content Include="estudiante\ranking.aspx" />
     <Content Include="Images\accent.png" />
     <Content Include="Images\bullet.png" />
     <Content Include="Images\heroAccent.png" />
@@ -304,6 +305,13 @@
     </Compile>
     <Compile Include="estudiante\estudiante.aspx.vb">
       <DependentUpon>estudiante.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="estudiante\ranking.aspx.designer.vb">
+      <DependentUpon>ranking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="estudiante\ranking.aspx.vb">
+      <DependentUpon>ranking.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="index.aspx.vb">
