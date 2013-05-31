@@ -1,8 +1,13 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="ranking.aspx.vb" Inherits="CalificaUD.ranking" %>
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="calificarProfesor.aspx.vb" Inherits="CalificaUD.calificarProfesor" %>
+
+<%@ Import Namespace="CalificaUD" %>
+
 <%@ outputcache Location="None" %> 
 <%
     If Session("activate") Then
 %>
+
+
 <!doctype html>
 <html lang="es">
 <head>
@@ -60,39 +65,68 @@
             <ul class="nav nav-list">
              <li><a  class="btn " href="estudiante.html"><i class="icon-home"></i>Home</a></li>
 			  <li class="nav-header"><i class="icon-book"></i> Informate</li>
-              <li><a  class="btn active" href="todos_los_profesores.html">Todos los profesores</a></li>
+              <li><a  class="btn " href="todos_los_profesores.html">Todos los profesores</a></li>
               <li class="nav-header"><i class="icon-globe"></i> Cuantifica</li>
               <li ><a class="btn space_link" href="#">Estadisticas por Facultad <span class="label">¡Muy Pronto!</span></a></li>
               <li><a class="btn space_link" href="estadisticas_carrera.html">Estadisticas por carrera <span class="label label-important">¡Nuevo!</span></a></li>
               <li><a class="btn space_link" href="estadisticas_materia.html">Estadisticas por Materia <span class="label label-important">¡Nuevo!</span></a></li>
               <li class="nav-header"><i class="icon-ok-sign"></i> Califica</li>
               <li><a class="btn  space_link" href="califica_carrera.html">Por carrera <span class="label label-important">¡Nuevo!</span></a></li>
-              <li><a class="btn space_link" href="califica_materia.html">Por materia <span class="label label-important">¡Nuevo!</span></a></li>          
+              <li><a class="btn active space_link" href="califica_materia.html">Por materia <span class="label label-important">¡Nuevo!</span></a></li>          
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
+        <div class="span9 text-center">
+        	<h1>¡Calificacion de Profesores!</h1>
+        	<hr>
+        	<p>Seleccione la carrera:</p>
+            <asp:ListBox ID="ListBox_carrera" runat="server" CssClass="input-xxlarge" AutoPostBack="True" DataSourceID="SqlDataSource1" DataTextField="Carr_nombre" DataValueField="Carr_codigo" Rows="1"></asp:ListBox>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\camilortte\Documents\GitHub\CalificaUD\DataBase\CalificaUDDataBase.mdf;Integrated Security=True;Connect Timeout=30" ProviderName="System.Data.SqlClient" SelectCommand="SELECT * FROM [Carrera]"></asp:SqlDataSource>
+            <br>
+            <p>Seleccione la Materia:</p>
+            <asp:ListBox ID="ListBox_materia" runat="server" CssClass="input-xxlarge" AutoPostBack="True" DataSourceID="SqlDataSource2" DataTextField="Asig_nombre" DataValueField="Asig_codigo" Rows="1"></asp:ListBox>
+            <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\camilortte\Documents\GitHub\CalificaUD\DataBase\CalificaUDDataBase.mdf;Integrated Security=True;Connect Timeout=30" ProviderName="System.Data.SqlClient" SelectCommand="SELECT * FROM [Asignatura]"></asp:SqlDataSource>
+            <br>
+             <p>Seleccione el profesor:</p>
+            <asp:ListBox ID="ListBox_profesor"  runat ="server" CssClass="input-xxlarge" AutoPostBack="True" DataSourceID="SqlDataSource3"  DataTextField="Doce_nombre" DataValueField="Doce_id" Rows="1"  ></asp:ListBox>            
+            
+            <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\camilortte\Documents\GitHub\CalificaUD\DataBase\CalificaUDDataBase.mdf;Integrated Security=True;Connect Timeout=30" ProviderName="System.Data.SqlClient" 
+                SelectCommand="select * from Carrera , Carrera_Docente , Docente , Asignatura  WHERE Doce_id = CaDo_Doce_id  and CaDo_Carr_codigo = Carr_codigo and Asig_Doce_id = Doce_id and Asig_codigo = @Asig_codigo and CaDo_Carr_codigo = @Asig_carrera">
+                <SelectParameters>
+                    <asp:ControlParameter ControlID="ListBox_materia" Name="Asig_codigo" PropertyName="SelectedValue" Type="Int32" />
+                    <asp:ControlParameter ControlID="ListBox_carrera" Name="Asig_carrera" PropertyName="SelectedValue" Type="Int32" />                    
+                </SelectParameters>
+            </asp:SqlDataSource>
+            <br>
+            
+            
 
-        <div class="span9">
-        	<h1>As&iacute; estan las tablas:</h1>
+            <table class="table table-bordered" id="tabla_res">
+				<tbody><tr><th>Criterio</th><th>Calificacion</th> </tr> 				
+                <%
+                
+                Dim conexion As New conexionDB
+                Dim canena() As String = conexion.consultaCriteriosEval()
+                Dim auzi As String
+                For i As Integer = 0 To canena.Count - 1
+                    auzi = "<tr class='warning'><td>" + canena(i) + "</td><td><select id='seleccion_"+i.ToString +"' name='seleccion_"+i.ToString +"' ><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td></tr>"
+                    Response.Write(auzi)
+                Next
+                
+                %>
+            </tbody></table>
 
-        	<table class="table table-bordered">
-				<tr><th>Nombre</th><th>Facultad</th><th>Materias</th><th>Carreras</th> </tr> 
-				<tr class="success"><td>Camilo</td><td>Tecnologica</td><td>Integral</td><td>Sistemas</td></tr>
-				<tr class="error"><td>Camilo</td><td>Tecnologica</td><td>Integral</td><td>Sistemas</td></tr>
-				<tr class="warning"><td>Camilo</td><td>Tecnologica</td><td>Integral</td><td>Sistemas</td></tr>
-			</table>
-            <asp:Button ID="Button1" runat="server" Text="Button" />
-			<p class="alert alert-success">Verde: El profesor supero el puntaje de 3.0</p>
-			<p class="alert alert-block">Amarillo: El profesor no tiene calificacion.</p>
-			<p class="alert alert-error">Rojo: El profesor no supero el puntaje de 3.0.</p>			
-			
-        </div><!--/span-->
+            <p runat="server"  id="alerta_parrafo" class="alert alert-error">Debe seleccionar un profesor.</p>
+
+            <asp:Button Text="Calificar" CssClass="btn btn-primary btn-large " runat="server" ID="Enviar" PostBackUrl="~/estudiante/insertar_calificacion.aspx"  />
+             </div>
       </div><!--/row-->
-
+         
       <hr>
 
     </div><!--/.fluid-container-->
 
+</form>
     <footer>
 			<div id="foote" class="container text-center"
 			    <p>&copy; Creado por Camilo Antonio Ramírez Morales <a href="https://twitter.com/camilortte">@Camilortte</a> on Twitter</p>
@@ -113,15 +147,15 @@
 	<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-collapse.js"></script>
 	<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-carousel.js"></script>
 	<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-typeahead.js"></script>
-</form>		
+	<script src="js/aplicacion.js"></script>	
 </body>
 </html>
+
 <% Else
         Response.Redirect("../index.aspx")
         %>
 
-<h1>ACCESO DENEGADO a RANKING</h1>
-
+<h1>ACCESO DENEGADO</h1>
 
 
 
@@ -130,3 +164,4 @@
 <%
     End If
 %>
+

@@ -65,7 +65,7 @@
               <li><a class="btn space_link" href="estadisticas_carrera.html">Estadisticas por carrera <span class="label label-important">¡Nuevo!</span></a></li>
               <li><a class="btn space_link" href="estadisticas_materia.html">Estadisticas por Materia <span class="label label-important">¡Nuevo!</span></a></li>
               <li class="nav-header"><i class="icon-ok-sign"></i> Califica</li>
-              <li><a class="btn  space_link" href="califica_carrera.html">Por carrera <span class="label label-important">¡Nuevo!</span></a></li>
+              <li><a class="btn  space_link" href="calificarProfesor.aspx">Por carrera <span class="label label-important">¡Nuevo!</span></a></li>
               <li><a class="btn space_link" href="califica_materia.html">Por materia <span class="label label-important">¡Nuevo!</span></a></li>              
             </ul>
           </div><!--/.well -->

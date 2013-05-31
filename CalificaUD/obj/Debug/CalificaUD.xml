@@ -6,7 +6,79 @@ CalificaUD
 </name>
 </assembly>
 <members>
-<member name="F:CalificaUD.RegisterExternalLogin.userNameForm">
+<member name="F:CalificaUD.calificarProfesor.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:CalificaUD.calificarProfesor.ListBox_carrera">
+	<summary>
+ListBox_carrera control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:CalificaUD.calificarProfesor.SqlDataSource1">
+	<summary>
+SqlDataSource1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:CalificaUD.calificarProfesor.ListBox_materia">
+	<summary>
+ListBox_materia control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:CalificaUD.calificarProfesor.SqlDataSource2">
+	<summary>
+SqlDataSource2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:CalificaUD.calificarProfesor.ListBox_profesor">
+	<summary>
+ListBox_profesor control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:CalificaUD.calificarProfesor.SqlDataSource3">
+	<summary>
+SqlDataSource3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:CalificaUD.calificarProfesor.alerta_parrafo">
+	<summary>
+alerta_parrafo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:CalificaUD.calificarProfesor.Enviar">
+	<summary>
+Enviar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:CalificaUD.RegisterExternalLogin.userNameForm">
 	<summary>
 userNameForm control.
 </summary>
@@ -17,6 +89,22 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:CalificaUD.RegisterExternalLogin.userName">
 	<summary>
 userName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:CalificaUD.ranking.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:CalificaUD.ranking.Button1">
+	<summary>
+Button1 control.
 </summary>
 	<remarks>
 Auto-generated field.

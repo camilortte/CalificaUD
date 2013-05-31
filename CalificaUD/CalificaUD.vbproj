@@ -206,7 +206,9 @@
     <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="estudiante\calificarProfesor.aspx" />
     <Content Include="estudiante\estudiante.aspx" />
+    <Content Include="estudiante\insertar_calificacion.aspx" />
     <Content Include="estudiante\ranking.aspx" />
     <Content Include="Images\accent.png" />
     <Content Include="Images\bullet.png" />
@@ -300,11 +302,25 @@
     <Compile Include="conexionDB.vb">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="estudiante\calificarProfesor.aspx.designer.vb">
+      <DependentUpon>calificarProfesor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="estudiante\calificarProfesor.aspx.vb">
+      <DependentUpon>calificarProfesor.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="estudiante\estudiante.aspx.designer.vb">
       <DependentUpon>estudiante.aspx</DependentUpon>
     </Compile>
     <Compile Include="estudiante\estudiante.aspx.vb">
       <DependentUpon>estudiante.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="estudiante\insertar_calificacion.aspx.designer.vb">
+      <DependentUpon>insertar_calificacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="estudiante\insertar_calificacion.aspx.vb">
+      <DependentUpon>insertar_calificacion.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="estudiante\ranking.aspx.designer.vb">
