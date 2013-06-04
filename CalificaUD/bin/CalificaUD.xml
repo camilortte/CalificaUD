@@ -6,7 +6,176 @@ CalificaUD
 </name>
 </assembly>
 <members>
-<member name="F:CalificaUD.calificarProfesor.form1">
+<member name="T:CalificaUD.CalificaUDDataBaseDataSetCOCO.AsignaturaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CalificaUD.CalificaUDDataBaseDataSetCOCO.AsignaturaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CalificaUD.CalificaUDDataBaseDataSetCOCO.AsignaturaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CalificaUD.CalificaUDDataBaseDataSetCOCO">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CalificaUD.CalificaUDDataBaseDataSetCOCOTableAdapters.AsignaturaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:CalificaUD.CalificaUDDataBaseDataSetCOCOTableAdapters.TableAdapterManager.UpdateUpdatedRows(CalificaUD.CalificaUDDataBaseDataSetCOCO,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:CalificaUD.CalificaUDDataBaseDataSetCOCOTableAdapters.TableAdapterManager.UpdateInsertedRows(CalificaUD.CalificaUDDataBaseDataSetCOCO,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:CalificaUD.CalificaUDDataBaseDataSetCOCOTableAdapters.TableAdapterManager.UpdateDeletedRows(CalificaUD.CalificaUDDataBaseDataSetCOCO,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:CalificaUD.CalificaUDDataBaseDataSetCOCOTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:CalificaUD.CalificaUDDataBaseDataSetCOCOTableAdapters.TableAdapterManager.UpdateAll(CalificaUD.CalificaUDDataBaseDataSetCOCO)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:CalificaUD.CalificaUDDataBaseDataSetCOCOTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:CalificaUD.CalificaUDDataBaseDataSetCOCOTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:CalificaUD.CalificaUDDataBaseDataSetCOCOTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="F:CalificaUD.RegisterExternalLogin.userNameForm">
+	<summary>
+userNameForm control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:CalificaUD.RegisterExternalLogin.userName">
+	<summary>
+userName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:CalificaUD.ranking.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:CalificaUD.ranking.Button1">
+	<summary>
+Button1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:CalificaUD.OpenAuthProviders.providerDetails">
+	<summary>
+providerDetails control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:CalificaUD.CalificaUDDataBaseDataSet.AsignaturaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CalificaUD.CalificaUDDataBaseDataSet.AsignaturaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CalificaUD.CalificaUDDataBaseDataSet.AsignaturaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CalificaUD.CalificaUDDataBaseDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CalificaUD.CalificaUDDataBaseDataSetTableAdapters.AsignaturaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:CalificaUD.CalificaUDDataBaseDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(CalificaUD.CalificaUDDataBaseDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:CalificaUD.CalificaUDDataBaseDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(CalificaUD.CalificaUDDataBaseDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:CalificaUD.CalificaUDDataBaseDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(CalificaUD.CalificaUDDataBaseDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:CalificaUD.CalificaUDDataBaseDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:CalificaUD.CalificaUDDataBaseDataSetTableAdapters.TableAdapterManager.UpdateAll(CalificaUD.CalificaUDDataBaseDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:CalificaUD.CalificaUDDataBaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:CalificaUD.CalificaUDDataBaseDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:CalificaUD.CalificaUDDataBaseDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="P:CalificaUD.My.MyWebExtension.Computer">
+	<summary>
+ Returns information about the host computer.
+ </summary>
+</member><member name="P:CalificaUD.My.MyWebExtension.User">
+	<summary>
+ Returns information for the current Web user.
+ </summary>
+</member><member name="P:CalificaUD.My.MyWebExtension.Request">
+	<summary>
+ Returns Request object.
+ </summary>
+</member><member name="P:CalificaUD.My.MyWebExtension.Response">
+	<summary>
+ Returns Response object.
+ </summary>
+</member><member name="P:CalificaUD.My.MyWebExtension.Log">
+	<summary>
+ Returns the Asp log object.
+ </summary>
+</member><member name="T:CalificaUD.My.MyWebExtension">
+	<summary>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:CalificaUD.calificarProfesor.form1">
 	<summary>
 form1 control.
 </summary>
@@ -78,71 +247,6 @@ Enviar control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:CalificaUD.RegisterExternalLogin.userNameForm">
-	<summary>
-userNameForm control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:CalificaUD.RegisterExternalLogin.userName">
-	<summary>
-userName control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:CalificaUD.ranking.form1">
-	<summary>
-form1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:CalificaUD.ranking.Button1">
-	<summary>
-Button1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:CalificaUD.OpenAuthProviders.providerDetails">
-	<summary>
-providerDetails control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="P:CalificaUD.My.MyWebExtension.Computer">
-	<summary>
- Returns information about the host computer.
- </summary>
-</member><member name="P:CalificaUD.My.MyWebExtension.User">
-	<summary>
- Returns information for the current Web user.
- </summary>
-</member><member name="P:CalificaUD.My.MyWebExtension.Request">
-	<summary>
- Returns Request object.
- </summary>
-</member><member name="P:CalificaUD.My.MyWebExtension.Response">
-	<summary>
- Returns Response object.
- </summary>
-</member><member name="P:CalificaUD.My.MyWebExtension.Log">
-	<summary>
- Returns the Asp log object.
- </summary>
-</member><member name="T:CalificaUD.My.MyWebExtension">
-	<summary>
- Module used to define the properties that are available in the My Namespace for Web projects.
- </summary>
-	<remarks></remarks>
 </member><member name="F:CalificaUD.Register.RegisterUser">
 	<summary>
 RegisterUser control.
@@ -285,6 +389,54 @@ PreviousPage property.
 </summary>
 	<remarks>
 Auto-generated property.
+</remarks>
+</member><member name="F:CalificaUD.WebForm1.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:CalificaUD.WebForm1.DropDownList1">
+	<summary>
+DropDownList1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:CalificaUD.WebForm1.SqlDataSource1">
+	<summary>
+SqlDataSource1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:CalificaUD.WebForm1.ScriptManager1">
+	<summary>
+ScriptManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:CalificaUD.WebForm1.ReportViewer1">
+	<summary>
+ReportViewer1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:CalificaUD.WebForm1.ObjectDataSource1">
+	<summary>
+ObjectDataSource1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 </members>

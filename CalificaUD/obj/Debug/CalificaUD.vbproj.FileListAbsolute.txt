@@ -100,3 +100,5 @@ C:\Users\camilortte\Desktop\CalificaUD-releaseVisualStudio2\CalificaUD-releaseVi
 C:\Users\camilortte\Desktop\CalificaUD-releaseVisualStudio2\CalificaUD-releaseVisualStudio\CalificaUD\obj\Debug\CalificaUD.dll
 C:\Users\camilortte\Desktop\CalificaUD-releaseVisualStudio2\CalificaUD-releaseVisualStudio\CalificaUD\obj\Debug\CalificaUD.xml
 C:\Users\camilortte\Desktop\CalificaUD-releaseVisualStudio2\CalificaUD-releaseVisualStudio\CalificaUD\obj\Debug\CalificaUD.pdb
+C:\Users\camilortte\Documents\GitHub\CalificaUD\CalificaUD\obj\Debug\RdlCompile.cache
+C:\Users\camilortte\Documents\GitHub\CalificaUD\CalificaUD\obj\Debug\RdlCompile.compiled

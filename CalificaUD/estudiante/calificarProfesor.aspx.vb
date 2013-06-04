@@ -22,8 +22,5 @@
     
     Protected Sub Enviar_Click(sender As Object, e As EventArgs) Handles Enviar.Click
 
-
-
-
     End Sub
 End Class

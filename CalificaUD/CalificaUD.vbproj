@@ -40,6 +40,7 @@
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -151,6 +152,10 @@
     <Content Include="Account\OpenAuthProviders.ascx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="Account\RegisterExternalLogin.aspx" />
+    <Content Include="App_Data\CalificaUDDataBase.mdf" />
+    <Content Include="App_Data\CalificaUDDataBase_log.ldf">
+      <DependentUpon>CalificaUDDataBase.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\Site.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -206,6 +211,7 @@
     <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="estudiante\actualizarDatos.aspx" />
     <Content Include="estudiante\calificarProfesor.aspx" />
     <Content Include="estudiante\estudiante.aspx" />
     <Content Include="estudiante\insertar_calificacion.aspx" />
@@ -225,6 +231,29 @@
     <Content Include="Images\orderedList9.png" />
     <Content Include="packages.config" />
     <Content Include="login.aspx" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="CalificaUDDataBaseDataSet.xsc">
+      <DependentUpon>CalificaUDDataBaseDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="CalificaUDDataBaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CalificaUDDataBaseDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="CalificaUDDataBaseDataSet.xss">
+      <DependentUpon>CalificaUDDataBaseDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="CalificaUDDataBaseDataSetCOCO.xsc">
+      <DependentUpon>CalificaUDDataBaseDataSetCOCO.xsd</DependentUpon>
+    </Content>
+    <None Include="CalificaUDDataBaseDataSetCOCO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CalificaUDDataBaseDataSetCOCO.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="CalificaUDDataBaseDataSetCOCO.xss">
+      <DependentUpon>CalificaUDDataBaseDataSetCOCO.xsd</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="redirige.aspx" />
     <Content Include="registra.aspx" />
@@ -299,8 +328,25 @@
     <Compile Include="Account\RegisterExternalLogin.aspx.designer.vb">
       <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="CalificaUDDataBaseDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CalificaUDDataBaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CalificaUDDataBaseDataSetCOCO.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CalificaUDDataBaseDataSetCOCO.xsd</DependentUpon>
+    </Compile>
     <Compile Include="conexionDB.vb">
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="estudiante\actualizarDatos.aspx.designer.vb">
+      <DependentUpon>actualizarDatos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="estudiante\actualizarDatos.aspx.vb">
+      <DependentUpon>actualizarDatos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="estudiante\calificarProfesor.aspx.designer.vb">
       <DependentUpon>calificarProfesor.aspx</DependentUpon>
@@ -380,6 +426,13 @@
       <DependentUpon>registra.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="WebForm1.aspx.designer.vb">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.vb">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -388,6 +441,7 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report2.rdlc" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Account\Web.config" />
@@ -409,7 +463,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Code\" />
-    <Folder Include="App_Data\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
