@@ -5,10 +5,9 @@ Plataforma en ASP.NET para calificar profesores de la universidad Distrital facu
 
 ##Información:
 * La aplicacion esta compilada en ASP.NET usando el entorno de desarrollo VisualStudio-2012.
-* Se agregaron la clase login y la clase registro
-* Ya se puede registrar
-* Ya se puede iniciar sesión
-* Ya hay manejo de sesiones
+* se puede registrar
+* se puede iniciar sesión
+* hay manejo de sesiones
 
 ## Tener cuidado con el pryecto ya que:
 * Se deben modificar la dirección de la bases de datos en conexioBD.vb
